@@ -1,4 +1,30 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
-    <path android:fillColor="#FFE7E9EC" android:pathData="M30,38h5v5h-5z M50,38h5v5h-5z M30,43h5v5h-5z M50,43h5v5h-5z M30,48h5v5h-5z M50,48h5v5h-5z M30,53h25v5h-25z M30,58h5v5h-5z M50,58h5v5h-5z M30,63h5v5h-5z M50,63h5v5h-5z M30,68h5v5h-5z M50,68h5v5h-5z"/>
-    <path android:fillColor="#FF6BAED6" android:pathData="M75.6,36h2.2v2.2h-2.2z M71.2,38.2h6.6v2.2h-6.6z M66.8,40.4h11v2.2h-11z M62.4,42.6h15.4v2.2h-15.4z M58,44.8h19.8v2.2h-19.8z M62.4,47h13.2v2.2h-13.2z M66.8,49.2h6.6v2.2h-6.6z M66.8,51.4h4.4v2.2h-4.4z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- солнце -->
+    <path
+        android:fillColor="#E8C37A"
+        android:pathData="M36,62 A18,18 0 0 1 72,62 Z" />
+    <!-- горизонт -->
+    <path
+        android:pathData="M28,66 L80,66"
+        android:strokeColor="#E8C37A"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.5" />
+    <!-- лучи -->
+    <path
+        android:pathData="M54,38 L54,31 M71,45 L76,40 M37,45 L32,40"
+        android:strokeColor="#E8C37A"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.5" />
+    <!-- отражение -->
+    <path
+        android:pathData="M40,73 L68,73"
+        android:strokeAlpha="0.45"
+        android:strokeColor="#E8C37A"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.5" />
 </vector>
