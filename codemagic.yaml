@@ -1,0 +1,21 @@
+workflows:
+  hope-apk:
+    name: HOPE APK
+    max_build_duration: 30
+    instance_type: linux_x2
+    environment:
+      java: 17
+    triggering:
+      events:
+        - push
+    scripts:
+      - name: Build release APK
+        script: |
+          set -e
+          GRADLE_VER=8.9
+          curl -sL "https://services.gradle.org/distributions/gradle-${GRADLE_VER}-bin.zip" -o /tmp/gradle.zip
+          unzip -q /tmp/gradle.zip -d "$HOME"
+          echo "sdk.dir=${ANDROID_SDK_ROOT:-$ANDROID_HOME}" > local.properties
+          "$HOME/gradle-${GRADLE_VER}/bin/gradle" --no-daemon assembleRelease
+    artifacts:
+      - app/build/outputs/apk/release/*.apk
